@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FPGA Fabric — preview</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/fabric-preview.css">
+</head>
+<body>
+<div id="stage"></div>
+<div class="panel">
+<h1>Fabric</h1>
+<label for="pitch">Cell pitch</label>
+<input class="fabric-control" type="range" id="pitch" data-option="pitch" min="60" max="340" step="2" value="220" data-divisor="1" data-digits="0" data-prefix="">
+<span class="v" id="pitch-v"></span>
+<label for="tracks">Wires / channel</label>
+<input class="fabric-control" type="range" id="tracks" data-option="tracks" min="3" max="16" step="1" value="8" data-divisor="1" data-digits="0" data-prefix="">
+<span class="v" id="tracks-v"></span>
+<label for="inset">Channel width</label>
+<input class="fabric-control" type="range" id="inset" data-option="inset" min="8" max="28" step="1" value="15" data-divisor="100" data-digits="2" data-prefix="">
+<span class="v" id="inset-v"></span>
+<label for="core">Block size</label>
+<input class="fabric-control" type="range" id="core" data-option="core" min="30" max="98" step="2" value="58" data-divisor="100" data-digits="2" data-prefix="">
+<span class="v" id="core-v"></span>
+<label for="signals">Signals</label>
+<input class="fabric-control" type="range" id="signals" data-option="signals" min="1" max="16" step="1" value="12" data-divisor="1" data-digits="0" data-prefix="">
+<span class="v" id="signals-v"></span>
+<label for="speed">Speed</label>
+<input class="fabric-control" type="range" id="speed" data-option="speed" min="20" max="320" step="2" value="180" data-divisor="1" data-digits="0" data-prefix="">
+<span class="v" id="speed-v"></span>
+<label for="width">Signal width</label>
+<input class="fabric-control" type="range" id="width" data-option="width" min="10" max="90" step="2" value="50" data-divisor="10" data-digits="1" data-prefix="">
+<span class="v" id="width-v"></span>
+<label for="trail">Trail</label>
+<input class="fabric-control" type="range" id="trail" data-option="trail" min="5" max="60" step="1" value="17" data-divisor="10" data-digits="1" data-prefix="">
+<span class="v" id="trail-v"></span>
+<button id="reroll">New routes</button>
+</div>
+<script src="assets/fabric.js"></script>
+<script src="assets/fabric-preview.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+html,body{margin:0;height:100%;background:#FAF9F5;color:#101010;
+    font-family:"IBM Plex Mono",ui-monospace,monospace}
+  #stage{position:fixed;inset:0}
+  .panel{position:fixed;left:20px;top:20px;background:rgba(250,249,245,.92);
+    border:1px solid #101010;padding:14px 16px;font-size:12px;line-height:1.9;
+    display:grid;grid-template-columns:auto 120px 3.4em;gap:4px 12px;align-items:center;
+    backdrop-filter:blur(2px)}
+  .panel h1{grid-column:1/-1;margin:0 0 6px;font-size:11px;letter-spacing:.16em;
+    text-transform:uppercase;font-weight:500;color:#787878}
+  .panel input[type=range]{width:120px;accent-color:#BB0F33}
+  .panel .v{color:#787878;text-align:right}
+  .panel button{grid-column:1/-1;margin-top:8px;font:inherit;font-size:12px;
+    border:1px solid #101010;background:#101010;color:#FED34C;padding:6px;cursor:pointer}
+  .panel button:hover{background:#BB0F33;border-color:#BB0F33;color:#fff}
