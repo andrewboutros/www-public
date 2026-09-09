@@ -103,7 +103,8 @@ a:focus-visible{outline:2px solid var(--lion);outline-offset:2px;border-radius:2
 /* ---------- main column ---------- */
 main{position:relative}
 main::before{content:"";position:absolute;inset:-30px -38px;z-index:-1;pointer-events:none;
-  background:linear-gradient(to right,rgba(250,249,245,.98) 0%,rgba(250,249,245,.9) 72%,rgba(250,249,245,.42) 100%)}
+  background:linear-gradient(to right,rgba(250,249,245,.98) 0%,rgba(250,249,245,.9) 68%,
+    rgba(250,249,245,.42) 88%,rgba(250,249,245,0) 100%)}
 h1{font-family:var(--sans);font-weight:700;font-size:clamp(44px,6.4vw,68px);line-height:.96;
   letter-spacing:-.02em;margin:0 0 6px;text-transform:uppercase}
 .role{font-family:var(--mono);font-size:13px;letter-spacing:.05em;color:var(--grey-3);
